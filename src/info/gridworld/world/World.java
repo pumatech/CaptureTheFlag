@@ -77,6 +77,7 @@ public class World<T> {
 	public void show() {
 		if (frame == null) {
 			frame = new WorldFrame<T>(this, backgroundImage);
+	        frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
 			frame.setVisible(true);
 		} else
 			frame.repaint();
