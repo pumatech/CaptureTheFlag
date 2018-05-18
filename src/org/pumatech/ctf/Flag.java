@@ -32,6 +32,6 @@ public class Flag extends Actor {
 	public Location getLocation() {
 		if (getGrid() == null && carrier != null)
 			return carrier.getLocation();
-		return super.getLocation();
+		return new Location(super.getLocation().getRow(), super.getLocation().getCol());
 	}
 }

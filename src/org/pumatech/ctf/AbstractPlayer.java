@@ -183,5 +183,9 @@ public abstract class AbstractPlayer extends Actor {
 
 	public final int getSteps() {
 		return steps;
-	}	
+	}
+	
+	public Location getLocation() {
+		return new Location(super.getLocation().getRow(), super.getLocation().getCol());
+	}
 }
