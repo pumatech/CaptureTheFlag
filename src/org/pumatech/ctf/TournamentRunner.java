@@ -6,16 +6,24 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
+import org.pumatech.teams.BustAChestnut.BustAChestnut;
+import org.pumatech.teams.DannyIsaac.SomethingRelatedToDanny;
+import org.pumatech.teams.Skynet.SkynetTeam;
+import org.pumatech.teams.ThiccBoisUnited.ThiccBoisUnited;
+import org.pumatech.teams.XLpackage.AGAKTeam;
 import org.pumatech.teams.sample.SampleTeam;
+import org.pumatech.teams.twice.TeamTwice;
 
 public class TournamentRunner {
 
 	public static void main(String[] args) {
 		List<Team> teams = new ArrayList<Team>();
-		teams.add(new SampleTeam(Color.RED));
-		teams.add(new SampleTeam(Color.BLUE));
-		teams.add(new SampleTeam(Color.YELLOW));
-		teams.add(new SampleTeam(Color.WHITE));
+		teams.add(new BustAChestnut());
+		teams.add(new SomethingRelatedToDanny());
+		teams.add(new SkynetTeam());
+		teams.add(new ThiccBoisUnited());
+		teams.add(new TeamTwice());
+		teams.add(new AGAKTeam());
 		
 		Bracket bracket = new Bracket(teams);
 		JFrame bracketViewer = new JFrame("Capture The Flag 2017 Bracket");
