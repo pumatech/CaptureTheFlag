@@ -14,6 +14,7 @@ import org.pumatech.teams.BestTeam.BestTeam;
 import org.pumatech.teams.DannyIsaac.SomethingRelatedToDanny;
 import org.pumatech.teams.DrProfessorShip.DrProfessorShipTheTeam;
 import org.pumatech.teams.MemeDreamTeam.MemeDreamTeam;
+import org.pumatech.teams.PhantomTeam.phanteam;
 import org.pumatech.teams.Skynet.SkynetTeam;
 import org.pumatech.teams.ThiccBoisUnited.ThiccBoisUnited;
 import org.pumatech.teams.XLpackage.AGAKTeam;
@@ -26,11 +27,11 @@ public class TournamentRunner {
 	public static void main(String[] args) {
 		List<Team> teams = new ArrayList<Team>();
 		
-//		teams.add(new org.pumatech.teams.ArpitaMakenna.SampleTeam());
-		teams.add(new BestTeam());
+		teams.add(new phanteam());
+//		teams.add(new BestTeam());
 //		teams.add(new BustAChestnut());
-		teams.add(new QuadrigisTeam());
-//		teams.add(new danielRuiFanClub());
+//		teams.add(new QuadrigisTeam());
+		teams.add(new danielRuiFanClub());
 //		teams.add(new SomethingRelatedToDanny());
 //		teams.add(new DrProfessorShipTheTeam());	
 //		teams.add(new MemeDreamTeam());	
