@@ -22,7 +22,7 @@ public class EdgeRusher extends AbstractPlayer {
 	public Location getMoveLocation() {
 		List<Location> possibleMoveLocations = getGrid().getEmptyAdjacentLocations(getLocation());
 		if (possibleMoveLocations.size() == 0) return null;
-		Team opp = getTeam().getOpposingTeam();
+		org.pumatech.ctf.Team opp = getTeam().getOpposingTeam();
 		Location otherFlag = opp.getFlag().getLocation();
 		if (!hasFlag()) return getBestAttackMove(possibleMoveLocations, otherFlag);
 		else return getBestReturnMove(possibleMoveLocations);

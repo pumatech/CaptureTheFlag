@@ -25,16 +25,6 @@ public class TournamentRunner {
 	public static void main(String[] args) {
 		List<Team> teams = new ArrayList<Team>();
 		teams.add(new BustAChestnut());
-		teams.add(new BustAChestnut());
-		teams.add(new SomethingRelatedToDanny());
-		teams.add(new SkynetTeam());
-		teams.add(new ThiccBoisUnited());
-		teams.add(new TeamTwice());
-		teams.add(new AGAKTeam());
-		teams.add(new DrProfessorShipTheTeam());	
-		teams.add(new danielRuiFanClub());
-		//teams.add(new Quadrigis());
-		teams.add(new BustAChestnut());
 		teams.add(new SomethingRelatedToDanny());
 		teams.add(new SkynetTeam());
 		teams.add(new ThiccBoisUnited());

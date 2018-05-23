@@ -7,8 +7,6 @@ import java.util.HashMap;
 import org.pumatech.ctf.AbstractPlayer;
 import org.pumatech.ctf.Team;
 
-import ctf.gen.GenD;
-import ctf.gen.GenO;
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
@@ -55,9 +53,9 @@ public class Feild {
 					if(pat!=0) {
 						double sco = 1. / pat;
 						if (((AbstractPlayer) a).getTeam() == t) {
-							if (a instanceof Defensionis || a instanceof GenD) {
+							if (a instanceof Defensionis) {
 								main.set(3, main.get(3) + sco);
-							} else if (a instanceof Offensionis || a instanceof GenO) {
+							} else if (a instanceof Offensionis) {
 								main.set(4, main.get(4) + sco);
 							} // change when more are added
 						} else {
