@@ -8,13 +8,13 @@ public class RandoDude extends Player {
 
 	public RandoDude(Location startLocation) {
 		super(startLocation);
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub	
 	}
 /**
  * finds weighted random location to move to. 
  */
 	public Location getMoveLocation() {
-		boolean gotit = friendlyFlag();
+		boolean gotit = hasFlag();
 		Location flag;
 		if (gotit == false) {
 			flag = flagIt();

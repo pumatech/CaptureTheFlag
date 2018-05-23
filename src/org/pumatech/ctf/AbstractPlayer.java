@@ -72,9 +72,11 @@ public abstract class AbstractPlayer extends Actor {
 						
 					}
 				}
-				if (!getMoveLocationThread.isInterrupted()) {
-					getMoveLocationThread.interrupt();
+				if (getMoveLocationThread.isAlive()) {
+					getMoveLocationThread.stop();
+					System.out.println(this+" was stopped");
 				}
+
 				makeMove(!this.getGrid().isValid(loc) ? this.getLocation() : loc); // fixed behavior
 			}
 		} catch (Exception e) {
@@ -183,9 +185,5 @@ public abstract class AbstractPlayer extends Actor {
 
 	public final int getSteps() {
 		return steps;
-	}
-	
-	public Location getLocation() {
-		return new Location(super.getLocation().getRow(), super.getLocation().getCol());
-	}
+	}	
 }

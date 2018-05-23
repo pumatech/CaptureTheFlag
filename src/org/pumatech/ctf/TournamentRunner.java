@@ -8,11 +8,12 @@ import java.util.List;
 import javax.swing.JFrame;
 
 import org.pumatech.teams.BustAChestnut.BustAChestnut;
-import org.pumatech.teams.adamTeam.AdamTeam;
+import org.pumatech.teams.ConnorTeam.QuadrigisTeam;
 import org.pumatech.teams.BustAChestnut.BustAChestnut;
-import org.pumatech.teams.Connor.ConnorTeam.Quadrigis;
+import org.pumatech.teams.BestTeam.BestTeam;
 import org.pumatech.teams.DannyIsaac.SomethingRelatedToDanny;
 import org.pumatech.teams.DrProfessorShip.DrProfessorShipTheTeam;
+import org.pumatech.teams.MemeDreamTeam.MemeDreamTeam;
 import org.pumatech.teams.Skynet.SkynetTeam;
 import org.pumatech.teams.ThiccBoisUnited.ThiccBoisUnited;
 import org.pumatech.teams.XLpackage.AGAKTeam;
@@ -24,15 +25,19 @@ public class TournamentRunner {
 
 	public static void main(String[] args) {
 		List<Team> teams = new ArrayList<Team>();
-		teams.add(new BustAChestnut());
-		teams.add(new SomethingRelatedToDanny());
-		teams.add(new SkynetTeam());
-		teams.add(new ThiccBoisUnited());
-		teams.add(new TeamTwice());
-		teams.add(new AGAKTeam());
-		teams.add(new DrProfessorShipTheTeam());	
-		teams.add(new danielRuiFanClub());
-		teams.add(new Quadrigis());
+		
+//		teams.add(new org.pumatech.teams.ArpitaMakenna.SampleTeam());
+		teams.add(new BestTeam());
+//		teams.add(new BustAChestnut());
+		teams.add(new QuadrigisTeam());
+//		teams.add(new danielRuiFanClub());
+//		teams.add(new SomethingRelatedToDanny());
+//		teams.add(new DrProfessorShipTheTeam());	
+//		teams.add(new MemeDreamTeam());	
+//		teams.add(new SkynetTeam());
+//		teams.add(new ThiccBoisUnited());
+//		teams.add(new TeamTwice());
+//		teams.add(new AGAKTeam());
 		
 		Collections.shuffle(teams);
 
