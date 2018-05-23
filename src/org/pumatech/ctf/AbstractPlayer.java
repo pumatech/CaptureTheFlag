@@ -74,7 +74,7 @@ public abstract class AbstractPlayer extends Actor {
 				}
 				if (getMoveLocationThread.isAlive()) {
 					getMoveLocationThread.stop();
-					System.out.println(this+" was stopped");
+					System.out.println("Player ran out of time: " + this);
 				}
 
 				makeMove(!this.getGrid().isValid(loc) ? this.getLocation() : loc); // fixed behavior

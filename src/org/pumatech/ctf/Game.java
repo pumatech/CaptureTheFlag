@@ -66,7 +66,8 @@ public class Game {
 		world.setGrid(grid);
 		
 		if (teamA.getSide() == 0) {
-			JOptionPane.showMessageDialog(null, teamA.getName() + " vs. " + teamB.getName());
+			JOptionPane.showMessageDialog(null, "Left: " + teamA.getName() + " vs. Right: " + teamB.getName());
+			world.setMessage("Left: " + teamA.getName() + " vs. Right: " + teamB.getName());
 		}
 		else {
 			JOptionPane.showMessageDialog(null, teamB.getName() + " vs. " + teamA.getName());
@@ -91,7 +92,7 @@ public class Game {
 		return Math.sqrt(Math.pow(loc1.getRow() - loc2.getRow(), 2) + Math.pow(loc1.getCol() - loc2.getCol(), 2));
 	}
 	public void draw(Graphics g) {
-		draw(g, 25, 300, 150, 60);
+		draw(g, 25, 400, 150, 40);
 	}
 
 	public void draw(Graphics g, int x, int y, int width, int height) {

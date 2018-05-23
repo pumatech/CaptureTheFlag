@@ -60,7 +60,7 @@ public class Bracket extends JPanel {
 		super.paintComponent(g);
 		g.setFont(new Font("Consolas", Font.PLAIN, 14));
 		g.setColor(Color.BLACK);
-		g.fillRect(0, 0, 800, 600);
+		g.fillRect(0, 0, 800, 800);
 		
 		finalGame.draw(g);
 		if (winner != null) {

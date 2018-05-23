@@ -7,7 +7,6 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
-import org.pumatech.teams.BustAChestnut.BustAChestnut;
 import org.pumatech.teams.ConnorTeam.QuadrigisTeam;
 import org.pumatech.teams.BustAChestnut.BustAChestnut;
 import org.pumatech.teams.BestTeam.BestTeam;
@@ -16,11 +15,14 @@ import org.pumatech.teams.DrProfessorShip.DrProfessorShipTheTeam;
 import org.pumatech.teams.MemeDreamTeam.MemeDreamTeam;
 import org.pumatech.teams.PhantomTeam.phanteam;
 import org.pumatech.teams.Skynet.SkynetTeam;
+import org.pumatech.teams.SquadTeamTeamSquad.SquadTeamTeamSquadTeam;
 import org.pumatech.teams.ThiccBoisUnited.ThiccBoisUnited;
+import org.pumatech.teams.VanDehy.VanDehyTeam;
 import org.pumatech.teams.XLpackage.AGAKTeam;
 import org.pumatech.teams.danielRuiFanClub.danielRuiFanClub;
 import org.pumatech.teams.sample.SampleTeam;
 import org.pumatech.teams.twice.TeamTwice;
+import org.pumatech.teams.weston.WestonTeam;
 
 public class TournamentRunner {
 
@@ -39,13 +41,18 @@ public class TournamentRunner {
 		teams.add(new ThiccBoisUnited());
 		teams.add(new TeamTwice());
 		teams.add(new AGAKTeam());
+	
+// guest teams
+//		teams.add(new VanDehyTeam());
+//		teams.add(new WestonTeam(Color.MAGENTA));
+//		teams.add(new SquadTeamTeamSquadTeam());
 		
 		Collections.shuffle(teams);
 
 		Bracket bracket = new Bracket(teams);
 		JFrame bracketViewer = new JFrame("Capture The Flag 2018 Bracket");
 		bracketViewer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		bracketViewer.setResizable(false);
+		bracketViewer.setResizable(true);
 		bracketViewer.add(bracket);
 		bracketViewer.pack();
 		bracketViewer.setLocationRelativeTo(null);
