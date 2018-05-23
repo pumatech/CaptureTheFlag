@@ -28,17 +28,17 @@ public class TournamentRunner {
 		List<Team> teams = new ArrayList<Team>();
 		
 		teams.add(new phanteam());
-//		teams.add(new BestTeam());
-//		teams.add(new BustAChestnut());
-//		teams.add(new QuadrigisTeam());
+		teams.add(new BestTeam());
+		teams.add(new BustAChestnut());
+		teams.add(new QuadrigisTeam());
 		teams.add(new danielRuiFanClub());
-//		teams.add(new SomethingRelatedToDanny());
-//		teams.add(new DrProfessorShipTheTeam());	
-//		teams.add(new MemeDreamTeam());	
-//		teams.add(new SkynetTeam());
-//		teams.add(new ThiccBoisUnited());
-//		teams.add(new TeamTwice());
-//		teams.add(new AGAKTeam());
+		teams.add(new SomethingRelatedToDanny());
+		teams.add(new DrProfessorShipTheTeam());	
+		teams.add(new MemeDreamTeam());	
+		teams.add(new SkynetTeam());
+		teams.add(new ThiccBoisUnited());
+		teams.add(new TeamTwice());
+		teams.add(new AGAKTeam());
 		
 		Collections.shuffle(teams);
 

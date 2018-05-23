@@ -1,0 +1,8 @@
+Rebuild Bracket system to play all lower-level matches first.  
+Add reset() method to team to create new instances of Players fresh for each match.  Right now players are created once and added to a Team - the Team is then re-used by Game and Bracket.
+Check thread timing - should use interrupt() instead of stop() - but how?  interrupt() must be polled for - does not actually "interrupt" the thread.
+ - maybe just time the getMoveLocation() call and assess a penalty if it goes too long?
+ Place restrictions on what can be used in solution to limit to structures used in APCS?
+ Require the use of a hierarchy and compliance to an Interface?
+ 
+ Scrap it and start over with a new competition idea?  Formally teach pathfinding?
