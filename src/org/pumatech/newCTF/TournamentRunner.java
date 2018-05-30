@@ -12,8 +12,8 @@ public class TournamentRunner {
 		teams.add(new NewSampleTeam(Color.RED));
 		teams.add(new NewSampleTeam(Color.BLUE));
 		teams.add(new NewSampleTeam(Color.GREEN));
-		teams.add(new NewSampleTeam(Color.PINK));
-		teams.add(new NewSampleTeam(Color.ORANGE));
+//		teams.add(new NewSampleTeam(Color.PINK));
+//		teams.add(new NewSampleTeam(Color.ORANGE));
 		CtfWorld world = new CtfWorld(teams.get(0), teams.get(1));
 		Tournament tournament = new Tournament(teams,world);
 		tournament.start();

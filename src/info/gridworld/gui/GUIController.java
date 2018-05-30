@@ -48,7 +48,7 @@ public class GUIController<T> {
 	public static final int INDEFINITE = 0, FIXED_STEPS = 1, PROMPT_STEPS = 2;
 
 	private static final int MIN_DELAY_MSECS = 10, MAX_DELAY_MSECS = 1000;
-	private static final int INITIAL_DELAY = MIN_DELAY_MSECS + (MAX_DELAY_MSECS - MIN_DELAY_MSECS) / 2;
+	private static final int INITIAL_DELAY = MIN_DELAY_MSECS + (int)((MAX_DELAY_MSECS - MIN_DELAY_MSECS) *0.2);
 
 	private Timer timer;
 	private JButton stepButton, runButton, stopButton;

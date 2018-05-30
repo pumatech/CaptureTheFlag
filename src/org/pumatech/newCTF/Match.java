@@ -67,6 +67,8 @@ public class Match {
 		} // There might be a better way to do this
 		
 		winner = teamA.hasWon() ? teamA : teamB;
+		JOptionPane.showMessageDialog(null, winner.getName() + " has won!");
+		
 	}
 	
 	public Team getWinner() {

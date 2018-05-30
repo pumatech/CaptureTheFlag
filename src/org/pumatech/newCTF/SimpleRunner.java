@@ -15,6 +15,8 @@ public class SimpleRunner {
 		Team winner = match.getWinner();
 		Team loser = (winner == a) ? b : a;
 		System.out.println(winner.getName() + " has won with a score of " + winner.getScore() + " to " + loser.getScore());
+		winner.displayStats(world.getSteps());
+		loser.displayStats(world.getSteps());
 	}
 	
 }

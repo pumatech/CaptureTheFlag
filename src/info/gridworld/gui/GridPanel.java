@@ -61,8 +61,8 @@ import info.gridworld.grid.Location;
 
 public class GridPanel extends JPanel implements Scrollable, PseudoInfiniteViewport.Pannable {
 	private static final long serialVersionUID = 1L;
-	private static final int MIN_CELL_SIZE = 12;
-	private static final int DEFAULT_CELL_SIZE = 48;
+	private static final int MIN_CELL_SIZE = 15;
+	private static final int DEFAULT_CELL_SIZE = 15;
 	private static final int DEFAULT_CELL_COUNT = 10;
 	private static final int TIP_DELAY = 1000;
 

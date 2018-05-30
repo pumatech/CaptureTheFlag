@@ -21,6 +21,10 @@ public abstract class Team {
 	private String name;
 	private volatile boolean hasWon;
 	private int score;
+	private int pickUps;
+	private int tags;
+	private int offenciveMoves;
+	
 	private int side;
 	
 	public Team(String name, Color color) {
@@ -49,13 +53,16 @@ public abstract class Team {
 		this.grid = grid;
 		this.side = side;
 		score = 0;
+		pickUps = 0;
+		tags = 0;
+		offenciveMoves = 0;
 		hasWon = false;
 		flag = new Flag(this);
 		flag.putSelfInGrid(grid, adjustForSide(DEFAULT_FLAG_LOCATION, grid));
 		resetTeam();
 		for (AbstractPlayer player : players) {
-			double dist = Math
-					.sqrt(Math.pow(player.getStartLocation().getRow() - DEFAULT_FLAG_LOCATION.getRow(), 2) + Math.pow(player.getStartLocation().getCol() - DEFAULT_FLAG_LOCATION.getCol(), 2));
+			double dist = Math.sqrt(Math.pow(player.getStartLocation().getRow() - DEFAULT_FLAG_LOCATION.getRow(), 2)
+					+ Math.pow(player.getStartLocation().getCol() - DEFAULT_FLAG_LOCATION.getCol(), 2));
 			if (player.getStartLocation().getCol() >= grid.getNumCols() / 2 || player.getStartLocation().getCol() < 0 || dist < 10.0) {
 				System.err.println("Someone has cheated and given their players an invalid start location");
 				Location nextLoc;
@@ -68,8 +75,25 @@ public abstract class Team {
 		}
 	}
 	
+	protected final void addPickUp() {
+		pickUps++;
+	}
+	
+	protected final void addTag() {
+		tags++;
+	}
+	
+	protected final void addOffenceiveMove() {
+		offenciveMoves++;
+	}
+	
+	public void displayStats(int steps) {
+		System.out.println(name + " got " + pickUps + " pick ups and " + tags + " tags. They made " + offenciveMoves
+				+ " steps on the offencive side, and were on the other side " + offenciveMoves / (steps + players.size()) + "% of the game");
+	}
+	
 	protected final void addScore(int s) {
-		score += s;
+		score += s; // could be cheated
 	}
 	
 	public final Location adjustForSide(Location loc, Grid<Actor> grid) {
@@ -83,8 +107,8 @@ public abstract class Team {
 	protected final void setHasWon() {
 		hasWon = true;
 		// if (hasWon)
-		// System.err.println("Someone has cheated and pretended to win without actually
-		// winning"); //I had to remove the team checking if it actually won
+		// System.err.println("Someone has cheated and pretended to win without actually winning");
+		// I had to remove the team checking if it actually won
 	}
 	
 	public final boolean onSide(Location loc) {

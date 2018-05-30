@@ -16,8 +16,7 @@ public abstract class AbstractPlayer extends Actor {
 	private static final int TAG = 1;
 	private static final int CARRY = 1;
 	
-	private static final int TURNTIME = 100; // The time the whole team has, in milliseconds. Each player is
-												// individually capped on time
+	private static final int TURNTIME = 100; // The time the whole team has, in milliseconds. Each player is individually capped on time, not the team
 	
 	private Team team;
 	private boolean hasFlag;
@@ -87,6 +86,7 @@ public abstract class AbstractPlayer extends Actor {
 					setColor(Color.YELLOW);
 					team.getOpposingTeam().getFlag().pickUp(this);
 					team.addScore(CAPTURE);
+					team.addPickUp();
 				}
 			}
 		}
@@ -98,6 +98,7 @@ public abstract class AbstractPlayer extends Actor {
 					if (((AbstractPlayer) neighbor).hasFlag() || Math.random() < (1. / neighborLocations.size())) {
 						((AbstractPlayer) neighbor).tag();
 						team.addScore(TAG);
+						team.addTag();
 					}
 				}
 			}
@@ -124,6 +125,7 @@ public abstract class AbstractPlayer extends Actor {
 					team.addScore(MOVE);
 				else
 					team.addScore(MOVE_ON_OPPONENT_SIDE);
+					team.addOffenceiveMove();
 				if (this.hasFlag) {
 					team.addScore(CARRY);
 				}

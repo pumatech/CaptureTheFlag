@@ -67,4 +67,7 @@ public class CtfWorld extends ActorWorld {
 	public int getGameLength() {
 		return MAX_GAME_LENGTH;
 	}
+	public int getSteps() {
+		return steps;
+	}
 }
