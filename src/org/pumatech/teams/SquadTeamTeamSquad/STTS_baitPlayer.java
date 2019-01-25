@@ -2,7 +2,7 @@ package org.pumatech.teams.SquadTeamTeamSquad;
 
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.newCTF.AbstractPlayer;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Rock;

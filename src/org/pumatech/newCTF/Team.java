@@ -28,7 +28,7 @@ public abstract class Team {
 	private int side;
 	
 	public Team(String name, Color color) {
-		players = new ArrayList<AbstractPlayer>();
+		players = new ArrayList<>();
 		this.name = name;
 		this.color = color;
 	}

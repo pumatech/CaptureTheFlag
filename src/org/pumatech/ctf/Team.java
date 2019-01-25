@@ -10,7 +10,7 @@ import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
 
-public class Team {
+public abstract class Team {
 	public static final int MAX_SIZE = 8;
 	public static final int MAX_GAME_LENGTH = 1000;
 	public static final Location DEFAULT_FLAG_LOCATION = new Location(24, 10);

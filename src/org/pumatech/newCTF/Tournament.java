@@ -15,20 +15,24 @@ public class Tournament {
 	}
 	
 	public void start() {
-		ArrayList<Team> teamsToPlay = new ArrayList<Team>();
+		ArrayList<Team> teamsToPlay = new ArrayList<>();
 		teamsToPlay.addAll(teams);
-		ArrayList<Team> winningTeams = new ArrayList<Team>();
+		ArrayList<Team> winningTeams = new ArrayList<>();
 		boolean first = false;
 		
 		
 		Bracket bracket=new Bracket(teams);
-		JFrame bracketViewer = new JFrame("Capture The Flag 2017 Bracket");
+		JFrame bracketViewer = new JFrame("Capture The Flag 2019 Bracket");
 		bracketViewer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		bracketViewer.setResizable(false);
+		bracketViewer.setResizable(true);
 		bracketViewer.add(bracket);
 		bracketViewer.pack();
 		bracketViewer.setLocationRelativeTo(null);
 		bracketViewer.setVisible(true);
+		for(Team t:teamsToPlay){
+			System.out.println("try");
+			bracket.addWinner(t.getName());
+		}
 		
 		while (teamsToPlay.size() > 1) {
 			boolean odd=teamsToPlay.size() % 2 == 1;
@@ -48,10 +52,14 @@ public class Tournament {
 				match.start();
 				winningTeams.add(match.getWinner());
 				bracket.addWinner(match.getWinner().getName());
+				bracketViewer.setVisible(false);
+				bracketViewer.setVisible(true);
 				System.out.println(match.getWinner().getName()+" won");
 			}
 			if(odd&&!first) {
 				bracket.addWinner(teamsToPlay.get(teamsToPlay.size()-1).getName());
+				bracketViewer.setVisible(false);
+				bracketViewer.setVisible(true);
 				winningTeams.add(teamsToPlay.get(teamsToPlay.size()-1));
 				System.out.println(teamsToPlay.get(teamsToPlay.size()-1).getColor()+" got a bye");
 				first=true;

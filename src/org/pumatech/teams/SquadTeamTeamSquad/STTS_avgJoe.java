@@ -3,8 +3,8 @@ package org.pumatech.teams.SquadTeamTeamSquad;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
-import org.pumatech.ctf.Flag;
+import org.pumatech.newCTF.AbstractPlayer;
+import org.pumatech.newCTF.Flag;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Rock;

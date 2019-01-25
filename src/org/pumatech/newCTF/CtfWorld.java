@@ -5,7 +5,7 @@ import java.util.Collections;
 import info.gridworld.actor.ActorWorld;
 
 public class CtfWorld extends ActorWorld {
-	public static final int MAX_GAME_LENGTH = 50;
+	public static final int MAX_GAME_LENGTH = 1000;
 	
 	private ArrayList<AbstractPlayer> players;
 	private Team teamA, teamB;
@@ -42,6 +42,7 @@ public class CtfWorld extends ActorWorld {
 				if (p.hasFlag()) {
 					if (p.getTeam().onSide(p.getLocation())) {
 						p.getTeam().setHasWon();
+						return;
 					}
 				}
 			}

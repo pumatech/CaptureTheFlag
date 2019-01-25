@@ -19,7 +19,7 @@ public abstract class AbstractPlayer extends Actor {
 	public AbstractPlayer(Location startLocation) {
 		this.startLocation = startLocation;
 	}
-	
+
 	public final void act() {
 		try {
 			team.announceScores(steps);
@@ -33,7 +33,7 @@ public abstract class AbstractPlayer extends Actor {
 				}
 				return;
 			}
-			
+
 			if (steps >= Team.MAX_GAME_LENGTH) {
 				if (team.getScore() > team.getOpposingTeam().getScore()) {
 					team.setHasWon(true);
@@ -69,7 +69,7 @@ public abstract class AbstractPlayer extends Actor {
 					try {
 						Thread.sleep(1);
 					} catch (InterruptedException e) {
-						
+
 					}
 				}
 				if (getMoveLocationThread.isAlive()) {
@@ -83,7 +83,7 @@ public abstract class AbstractPlayer extends Actor {
 			System.err.println("Player " + this + " has generated a runtime exception: " + e);
 		}
 	}
-	
+
 	private void processNeighbors() {
 		List<Location> neighborLocations = getGrid().getOccupiedAdjacentLocations(getLocation());
 		for (int i = neighborLocations.size() - 1; i >= 0; i--) {
@@ -108,7 +108,7 @@ public abstract class AbstractPlayer extends Actor {
 			}
 		}
 	}
-	
+
 	private void makeMove(Location loc) {
 		if (loc == null) loc=getLocation();
 		if (team.onSide(getLocation()) && getGrid().get(team.getFlag().getLocation()) instanceof Flag && team.nearFlag(getLocation())) {
@@ -130,9 +130,9 @@ public abstract class AbstractPlayer extends Actor {
 				team.scorePlay(ScoringPlay.MOVE_ON_OPPONENT_SIDE);
 		}
 	}
-	
+
 	public abstract Location getMoveLocation();
-	
+
 	private void tag() {
 		Location oldLoc = getLocation();
 		Location nextLoc;
@@ -141,13 +141,13 @@ public abstract class AbstractPlayer extends Actor {
 		} while (getGrid().get(nextLoc) != null);
 		moveTo(nextLoc);
 		tagCoolDown = 10;
-		
+
 		if (hasFlag) {
 			team.getOpposingTeam().getFlag().putSelfInGrid(getGrid(), oldLoc);
 			hasFlag = false;
 		}
 	}
-	
+
 	protected final void putSelfInGridProtected(Grid<Actor> grid, Location loc) {
 		if (getGrid() != null)
 			super.removeSelfFromGrid();
@@ -157,33 +157,33 @@ public abstract class AbstractPlayer extends Actor {
 		setColor(team.getColor());
 		super.putSelfInGrid(grid, loc);
 	}
-	
+
 	public final void removeSelfFromGrid() {
 		System.err.println("Someone has cheated and tried to remove a player from the grid");
 	}
-	
+
 	protected final void setTeam(Team team) {
 		this.team = team;
 		setColor(team.getColor());
 	}
-	
+
 	protected final void setStartLocation(Location startLocation) {
 		this.startLocation = startLocation;
 	}
-	
+
 	public final boolean hasFlag() {
 		return hasFlag;
 	}
-	
+
 	protected final Location getStartLocation() {
 		return startLocation;
 	}
-	
+
 	public final Team getTeam() {
 		return team;
 	}
 
 	public final int getSteps() {
 		return steps;
-	}	
+	}
 }

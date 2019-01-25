@@ -9,9 +9,9 @@ import info.gridworld.grid.Location;
 public class NewSampleTeam extends Team {
 
 	public NewSampleTeam() {
-		this(Color.DARK_GRAY);
+		this("Sample Team", Color.DARK_GRAY);
 	}
-	
+
 	public NewSampleTeam(Color color) {
 		this("Sample Team", color);
 	}

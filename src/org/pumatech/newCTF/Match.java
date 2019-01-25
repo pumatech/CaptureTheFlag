@@ -27,7 +27,7 @@ public class Match {
 	}
 	
 	public void start() {
-		BoundedGrid<Actor> grid = new BoundedGrid<Actor>(50, 100);
+		BoundedGrid<Actor> grid = new BoundedGrid<>(50, 100);
 		
 		double randomNumber = Math.random();
 		teamA.addTeamToGrid(grid, randomNumber < .5 ? 0 : 1);
