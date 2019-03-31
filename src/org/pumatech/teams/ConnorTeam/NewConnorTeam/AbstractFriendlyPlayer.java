@@ -3,12 +3,13 @@ package org.pumatech.teams.ConnorTeam.NewConnorTeam;
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
-import org.pumatech.newCTF.AbstractPlayer;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.pumatech.CTF2019.AbstractPlayer;
 
 public abstract class AbstractFriendlyPlayer extends AbstractPlayer {
 

@@ -1,6 +1,6 @@
 package org.pumatech.teams.PhantomTeam;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.grid.Location;
 

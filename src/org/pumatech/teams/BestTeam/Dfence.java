@@ -2,7 +2,7 @@ package org.pumatech.teams.BestTeam;
 
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;

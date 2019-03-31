@@ -1,6 +1,6 @@
 package org.pumatech.teams.newSample;
 
-import org.pumatech.newCTF.AbstractPlayer;
+import org.pumatech.CTF2019.AbstractPlayer;
 
 import info.gridworld.grid.Location;
 

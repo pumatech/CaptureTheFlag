@@ -2,7 +2,7 @@ package org.pumatech.teams.MemeDreamTeam;
 
 import java.awt.Color;
 
-import org.pumatech.ctf.Team;
+import org.pumatech.CTF2018.Team;
 
 import info.gridworld.grid.Location;
 

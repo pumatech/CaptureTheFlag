@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.pumatech.ctf.AbstractPlayer;
-import org.pumatech.ctf.Flag;
+import org.pumatech.CTF2018.AbstractPlayer;
+import org.pumatech.CTF2018.Flag;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;

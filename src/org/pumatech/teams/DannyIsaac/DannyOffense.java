@@ -3,7 +3,7 @@ package org.pumatech.teams.DannyIsaac;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;

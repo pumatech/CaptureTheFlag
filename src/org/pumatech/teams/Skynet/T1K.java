@@ -3,7 +3,7 @@ package org.pumatech.teams.Skynet;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.grid.Location;
 

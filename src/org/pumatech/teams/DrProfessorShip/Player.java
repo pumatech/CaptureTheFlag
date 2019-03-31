@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 //import com.sun.javafx.scene.traversal.Direction;
 

@@ -4,8 +4,8 @@ package org.pumatech.teams.ConnorTeam;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.pumatech.ctf.AbstractPlayer;
-import org.pumatech.ctf.Team;
+import org.pumatech.CTF2018.AbstractPlayer;
+import org.pumatech.CTF2018.Team;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;

@@ -1,10 +1,11 @@
 package org.pumatech.teams.ConnorTeam.NewConnorTeam;
 
 import info.gridworld.grid.Location;
-import org.pumatech.newCTF.Team;
 
 import java.awt.*;
 import java.util.ArrayList;
+
+import org.pumatech.CTF2019.Team;
 
 public class NewQuadrigisTeam extends Team {
     public NewQuadrigisTeam() {

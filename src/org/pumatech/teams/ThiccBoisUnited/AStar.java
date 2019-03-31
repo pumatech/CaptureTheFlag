@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;

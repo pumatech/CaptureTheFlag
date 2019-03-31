@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.grid.Location;
 

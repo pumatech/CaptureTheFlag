@@ -2,7 +2,7 @@
 package org.pumatech.teams.SquadTeamTeamSquad;
 import java.awt.Color;
 
-import org.pumatech.newCTF.Team;
+import org.pumatech.CTF2019.Team;
 import org.pumatech.teams.sample.BeelinePlayer;
 import org.pumatech.teams.sample.RandomPlayer;
 

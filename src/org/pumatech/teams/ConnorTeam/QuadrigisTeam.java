@@ -3,7 +3,7 @@ package org.pumatech.teams.ConnorTeam;
 import java.awt.Color;
 import java.util.ArrayList;
 
-import org.pumatech.ctf.Team;
+import org.pumatech.CTF2018.Team;
 
 import info.gridworld.grid.Location;
 

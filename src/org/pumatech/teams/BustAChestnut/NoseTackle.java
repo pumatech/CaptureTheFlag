@@ -1,7 +1,7 @@
 package org.pumatech.teams.BustAChestnut;
 import java.util.List;
 
-import org.pumatech.ctf.*;
+import org.pumatech.CTF2018.*;
 
 import info.gridworld.grid.Location;
 

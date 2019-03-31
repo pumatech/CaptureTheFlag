@@ -2,7 +2,7 @@ package org.pumatech.teams.ThiccBoisUnited;
 
 import java.awt.Color;
 
-import org.pumatech.ctf.Team;
+import org.pumatech.CTF2018.Team;
 import org.pumatech.teams.sample.BeelinePlayer;
 import org.pumatech.teams.sample.RandomPlayer;
 

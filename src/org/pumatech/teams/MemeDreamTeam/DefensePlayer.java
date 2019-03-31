@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.TreeMap;
 
-import org.pumatech.ctf.AbstractPlayer;
+import org.pumatech.CTF2018.AbstractPlayer;
 
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;

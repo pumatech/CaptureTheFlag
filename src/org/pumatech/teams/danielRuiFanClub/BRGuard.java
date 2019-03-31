@@ -3,9 +3,9 @@ package org.pumatech.teams.danielRuiFanClub;
 
 import java.util.ArrayList;
 
-import org.pumatech.ctf.AbstractPlayer;
-import org.pumatech.ctf.Flag;
-import org.pumatech.ctf.Team;
+import org.pumatech.CTF2018.AbstractPlayer;
+import org.pumatech.CTF2018.Flag;
+import org.pumatech.CTF2018.Team;
 
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Grid;

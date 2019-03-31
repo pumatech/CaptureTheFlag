@@ -2,7 +2,7 @@ package org.pumatech.teams.newSample;
 
 import java.awt.Color;
 
-import org.pumatech.newCTF.Team;
+import org.pumatech.CTF2019.Team;
 
 import info.gridworld.grid.Location;
 

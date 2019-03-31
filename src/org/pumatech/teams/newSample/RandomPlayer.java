@@ -2,7 +2,7 @@ package org.pumatech.teams.newSample;
 
 import java.util.List;
 
-import org.pumatech.newCTF.AbstractPlayer;
+import org.pumatech.CTF2019.AbstractPlayer;
 
 import info.gridworld.grid.Location;
 

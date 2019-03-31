@@ -2,7 +2,7 @@ package org.pumatech.teams.VanDehy;
 
 import java.util.List;
 
-import org.pumatech.ctf.Flag;
+import org.pumatech.CTF2018.Flag;
 
 import info.gridworld.grid.Location;
 

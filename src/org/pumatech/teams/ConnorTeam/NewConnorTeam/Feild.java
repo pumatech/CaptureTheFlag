@@ -4,11 +4,12 @@ package org.pumatech.teams.ConnorTeam.NewConnorTeam;
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
-import org.pumatech.newCTF.AbstractPlayer;
-import org.pumatech.newCTF.Team;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import org.pumatech.CTF2019.AbstractPlayer;
+import org.pumatech.CTF2019.Team;
 
 public class Feild {
 	private Location l;

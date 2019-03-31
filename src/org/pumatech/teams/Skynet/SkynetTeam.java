@@ -1,7 +1,8 @@
 package org.pumatech.teams.Skynet;
 
 import java.awt.Color;
-import org.pumatech.ctf.Team;
+
+import org.pumatech.CTF2018.Team;
 
 import info.gridworld.grid.Location;
 

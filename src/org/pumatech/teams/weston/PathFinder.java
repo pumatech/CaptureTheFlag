@@ -5,8 +5,8 @@ package org.pumatech.teams.weston;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.pumatech.ctf.AbstractPlayer;
-import org.pumatech.ctf.Flag;
+import org.pumatech.CTF2018.AbstractPlayer;
+import org.pumatech.CTF2018.Flag;
 
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;
