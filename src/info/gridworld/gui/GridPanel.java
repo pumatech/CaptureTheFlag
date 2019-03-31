@@ -70,7 +70,7 @@ public class GridPanel extends JPanel implements Scrollable, PseudoInfiniteViewp
 	private int numRows, numCols, originRow, originCol;
 	private int cellSize; // the size of each cell, EXCLUDING the gridlines
 	private boolean toolTipsEnabled;
-	private Color backgroundColor = Color.WHITE;
+	private Color backgroundColor = Color.GREEN;
 	private BufferedImage backgroundImage;
 	private ResourceBundle resources;
 	private DisplayMap displayMap;
